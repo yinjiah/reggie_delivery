@@ -1,0 +1,39 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reggie?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: xiaoyin521
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: reggie_take_out
+  config:
+    name: application
+  web:
+    resources:
+      static-locations:
+  mail:
+    host: smtp.qq.com
+    username: jhyinucc@foxmail.com
+    password: xsqiukohhtitdbfb
+    default-encoding: utf-8
+    protocol: smtp
+#  mvc:
+#    static-path-pattern: /backend/**
+#  web:
+#    resources:
+#      static-locations: classpath:/backend/,classpath:/front/
+server:
+  port: 8080
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+
+image:
+  basedir: d:/image/
